@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -26,12 +25,18 @@
       <div class="screen chat-screen">
         <div class="header">
           <div class="logo">Chatroom</div>
+          <div class="channel-select">
+            <button class="channel-btn" data-channel="general">General</button>
+            <button class="channel-btn" data-channel="channel2">Channel 2</button>
+            <button class="channel-btn" data-channel="channel3">Channel 3</button>
+          </div>
           <button id="exit-chat">Exit</button>
         </div>
         <div class="messages"></div>
         <div class="typebox">
-          <input type="text" id="message-input" />
+          <input type="text" id="message-input" placeholder="Type your message..." />
           <button id="send-message">Send</button>
+          <input type="file" id="file-input" style="margin-left:10px;" />
         </div>
       </div>
     </div>
